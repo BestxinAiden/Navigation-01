@@ -1,0 +1,61 @@
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "阿里妈妈数黑体";
+    font-weight: 700;
+    src: url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/a9SR4Cv_i2LfoeMKdjfZ6.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/_o7h5-x5w4A8uPBobiZzp.woff") format("woff");
+    font-display: swap;
+}
+
+ /*CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。*/
+/*@font-face {*/
+/*    font-family: "阿里巴巴普惠体 2.0 105 Heavy";*/
+/*    font-weight: 900;*/
+/*    src: url("./阿里巴巴普惠体 2.0 105 Heavy.woff2") format("woff2"),*/
+/*    url("./阿里巴巴普惠体 2.0 105 Heavy.woff") format("woff");*/
+/*    font-display: swap;*/
+/*}*/
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "阿里巴巴普惠体 2.0 105 Heavy";
+    font-weight: 900;
+    /*src: url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/ihrOhKN9yAfB5ie_7Ag9n.woff2") format("woff2"),*/
+    /*url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/tdA6mLSsOdhDk1zCnn6XI.woff") format("woff");*/
+        src: url("./阿里巴巴普惠体 2.0 105 Heavy.woff2") format("woff2"),
+        url("./阿里巴巴普惠体 2.0 105 Heavy.woff") format("woff");
+    font-display: swap;
+}
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "思源宋体 CN VF Regular";
+    src: url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/RLMHcoGR6SQyE8-TaXKWA.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/pmixLuHn1uARAN05PnFjP.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("./Baloo-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "苍耳今楷体";
+    src: url("./苍耳今楷体.ttf");
+    font-display: swap;
+}
+/*!* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 *!*/
+/*@font-face {*/
+/*    font-family: "阿里巴巴普惠体 2.0 105 Heavy";font-weight: 800;src: url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/y45tClCXeGT4SatlLcVCH.woff2") format("woff2"),*/
+/*url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/LNPuR2DO2JWbX_mfkRv9Q.woff") format("woff");*/
+/*    font-display: swap;*/
+/*}*/
+
+/*!* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 *!*/
+/*@font-face {*/
+/*    font-family: "阿里巴巴普惠体 2.0 35 Thin";font-weight: 250;src: url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/7l2DevK-qX0iK4hmhV2Io.woff2") format("woff2"),*/
+/*url("//at.alicdn.com/wf/webfont/u8J1O6obMkkY/R0SwTBjXp2530yWWoQq53.woff") format("woff");*/
+/*    font-display: swap;*/
+/*}*/

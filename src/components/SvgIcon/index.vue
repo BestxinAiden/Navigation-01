@@ -1,8 +1,5 @@
 <template>
-  <svg
-      :class="svgClass"
-      aria-hidden="true"
-  >
+  <svg :class="svgClass" aria-hidden="true" v-on="$listeners">
     <use :xlink:href="iconName" />
   </svg>
 </template>
@@ -11,36 +8,49 @@
 export default {
   name: 'SvgIcon',
   props: {
-    iconClass: { // 这里就是svg文件的名称
+    iconClass: {
       type: String,
-      required: true,
+      required: true
     },
     className: {
       type: String,
-      default: '',
-    },
+      default: ''
+    }
   },
   computed: {
-    iconName () { // 利用计算属性拼接生成svg名称
-      return `#icon-${this.iconClass}`;
+
+    iconName() {
+      return `#icon-${this.iconClass}`
     },
-    svgClass () {
+    svgClass() {
       if (this.className) {
-        return 'svg-icon ' + this.className;
+        return 'svg-icon ' + this.className
       } else {
-        return 'svg-icon';
+        return 'svg-icon'
       }
     },
-  },
-};
+    styleExternalIcon() {
+      return {
+        mask: `url(${this.iconClass}) no-repeat 50% 50%`,
+        '-webkit-mask': `url(${this.iconClass}) no-repeat 50% 50%`
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
 .svg-icon {
-  width: 100%;
-  height: 100%;
+  width: 1.5em;
+  height: 1.5em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+}
+
+.svg-external-icon {
+  background-color: currentColor;
+  mask-size: cover!important;
+  display: inline-block;
 }
 </style>

@@ -10,17 +10,8 @@
               <el-container>
                 <el-container>
                   <el-aside width="10vw" style="height: 10vw; background-color: wheat">
-                    <el-row class="index-weather">
-                      <el-col :span="12"><div class="index-weather-temp" >{{ weather.temp }}℃</div></el-col>
-                      <el-col :span="12"><div class="index-weather-icon" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="`qi-400`" viewBox="0 0 16 16" >
-                          <path d="M7.012 14.985a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM3.959 14a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zm6.028 0a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM5.207 1.904h.007a.5.5 0 0 0 .493-.506L5.695.494a.5.5 0 0 0-.5-.494h-.007a.5.5 0 0 0-.493.506l.012.905a.5.5 0 0 0 .5.493zm-2.892.946a.5.5 0 1 0 .698-.716l-.648-.63a.5.5 0 1 0-.697.715zm-.179 2.203a.5.5 0 0 0-.5-.493h-.007l-.905.011a.5.5 0 0 0 .007 1h.007l.904-.011a.5.5 0 0 0 .494-.507zm5.638-2.12a.5.5 0 0 0 .359-.151l.63-.648a.5.5 0 0 0-.716-.698l-.631.648a.5.5 0 0 0 .358.849z"/>
-                          <path d="M12.028 5.579a2.927 2.927 0 0 0-.37.037 4.364 4.364 0 0 0-7.316 0 2.926 2.926 0 0 0-.37-.037 2.972 2.972 0 1 0 1.16 5.709 4.302 4.302 0 0 0 5.735 0 2.972 2.972 0 1 0 1.16-5.71zm0 4.944a1.959 1.959 0 0 1-.77-.156 1 1 0 0 0-1.05.168 3.303 3.303 0 0 1-4.417 0 1 1 0 0 0-1.05-.168 1.972 1.972 0 1 1-.769-3.788 1.077 1.077 0 0 1 .15.017l.095.012a1 1 0 0 0 .962-.444 3.364 3.364 0 0 1 5.642 0 1 1 0 0 0 .962.444l.095-.012a1.08 1.08 0 0 1 .15-.017 1.972 1.972 0 1 1 0 3.944zM2.482 5.315A3.53 3.53 0 0 1 3.5 5.027a1.831 1.831 0 0 1 1.81-1.603 1.81 1.81 0 0 1 .553.095 4.933 4.933 0 0 1 1.281-.405A2.82 2.82 0 0 0 2.476 5.26c0 .02.006.037.006.056z"/>
-<!--                          <img src="`/some/path/400.svg`" alt="QWeather" width="32" height="32" class="">-->
-                        </svg>
-                      </div></el-col>
-                      <el-col :span="24"><div class="index-weather-end">{{ weather.text }} 空气 {{ air.category }}{{ air.aqi }}</div></el-col>
-                      <el-col :span="24"><div class="grid-content bg-purple-dark">{{ region }}</div></el-col>
+                    <el-row>
+                      <Weather></Weather>
                     </el-row>
 
 <!--                    <el-container class="index-weather">-->
@@ -56,9 +47,11 @@
 // import { weather } from "https://api.caiyunapp.com/v2.5/bU78pkqSYxNpNxi2/121.6544,25.1552/realtime.json"
 import axios from "axios";
 import Vue from "vue";
+import Weather from "@/views/Weather";
 Vue.prototype.$axios = axios
 export default {
   name: 'Home',
+  components: {Weather},
   data(){
     return{
       location:{},
@@ -147,40 +140,40 @@ export default {
 </script>
 
 
-<style>
-.index-weather{
-  height: 10vw;
-  border-radius: 20px;
-  background-color: lightskyblue;
-}
+<!--<style>-->
+<!--.index-weather{-->
+<!--  height: 10vw;-->
+<!--  border-radius: 20px;-->
+<!--  background-color: lightskyblue;-->
+<!--}-->
 
-.index-weather-temp{
-  height: 3.5vw;
-  padding-top: 1.5vw;
-  position: relative;
-  /*top: 30px;*/
-  font-size: 25px;
-  font-family: "阿里巴巴普惠体 2.0 105 Heavy";
-}
+<!--.index-weather-temp{-->
+<!--  height: 3.5vw;-->
+<!--  padding-top: 1.5vw;-->
+<!--  position: relative;-->
+<!--  /*top: 30px;*/-->
+<!--  font-size: 25px;-->
+<!--  font-family: "阿里巴巴普惠体 2.0 105 Heavy";-->
+<!--}-->
 
-.index-weather-end{
-  height: 1.5vw;
-  padding-top: 1vw;
-  position: relative;
-  /*top: 30px;*/
-  font-size: 15px;
-  font-family: "阿里巴巴普惠体 2.0 105 Heavy";
-}
+<!--.index-weather-end{-->
+<!--  height: 1.5vw;-->
+<!--  padding-top: 1vw;-->
+<!--  position: relative;-->
+<!--  /*top: 30px;*/-->
+<!--  font-size: 15px;-->
+<!--  font-family: "阿里巴巴普惠体 2.0 105 Heavy";-->
+<!--}-->
 
-.index-weather-icon{
-  padding-top: 1.5vw;
-  position: relative;
-}
+<!--.index-weather-icon{-->
+<!--  padding-top: 1.5vw;-->
+<!--  position: relative;-->
+<!--}-->
 
-/*.index-weather img{*/
-/*  width: 30px;*/
-/*  height: 30px;*/
-/*}*/
+<!--/*.index-weather img{*/-->
+<!--/*  width: 30px;*/-->
+<!--/*  height: 30px;*/-->
+<!--/*}*/-->
 
 
-</style>
+<!--</style>-->

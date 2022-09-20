@@ -1,9 +1,11 @@
 import axios from 'axios'
 import router from "@/router";
 import {serverIp} from "../../public/config";
+import {weather} from "../../public/config";
+
 
 const request = axios.create({
-    baseURL: `http://${serverIp}:9090`,
+    baseURL: `https://api.caiyunapp.com/v2.5/bU78pkqSYxNpNxi2/121.6544,25.1552/realtime.json`,
     timeout: 30000
 })
 

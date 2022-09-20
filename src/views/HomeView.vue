@@ -1,18 +1,102 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <el-row>
+      <el-col :span="6"><div class="grid-content bg-purple">aa</div></el-col>
+      <el-col :span="12">
+        <div class="grid-content bg-purple-light">
+          <el-container>
+            <el-header height="25vh" style="background-color: blueviolet" ><h1 style="margin-top: 100px">标题</h1></el-header>
+            <el-main  style="height: 70vh; background-color: aqua">
+              <el-container>
+                <el-container>
+                  <el-aside width="10vw" style="height: 10vw;">
+
+                    <Weather></Weather>
+<!--                    <el-row class="index-weather">-->
+<!--                      <el-col :span="12"><div class="index-weather-temp" >{{ weather.temp }}℃</div></el-col>-->
+<!--                      <el-col :span="12"><div class="index-weather-icon" >-->
+<!--&lt;!&ndash;                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="qi-400" viewBox="0 0 16 16" >&ndash;&gt;-->
+<!--&lt;!&ndash;                          <path d="M7.012 14.985a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM3.959 14a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zm6.028 0a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM5.207 1.904h.007a.5.5 0 0 0 .493-.506L5.695.494a.5.5 0 0 0-.5-.494h-.007a.5.5 0 0 0-.493.506l.012.905a.5.5 0 0 0 .5.493zm-2.892.946a.5.5 0 1 0 .698-.716l-.648-.63a.5.5 0 1 0-.697.715zm-.179 2.203a.5.5 0 0 0-.5-.493h-.007l-.905.011a.5.5 0 0 0 .007 1h.007l.904-.011a.5.5 0 0 0 .494-.507zm5.638-2.12a.5.5 0 0 0 .359-.151l.63-.648a.5.5 0 0 0-.716-.698l-.631.648a.5.5 0 0 0 .358.849z"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                          <path d="M12.028 5.579a2.927 2.927 0 0 0-.37.037 4.364 4.364 0 0 0-7.316 0 2.926 2.926 0 0 0-.37-.037 2.972 2.972 0 1 0 1.16 5.709 4.302 4.302 0 0 0 5.735 0 2.972 2.972 0 1 0 1.16-5.71zm0 4.944a1.959 1.959 0 0 1-.77-.156 1 1 0 0 0-1.05.168 3.303 3.303 0 0 1-4.417 0 1 1 0 0 0-1.05-.168 1.972 1.972 0 1 1-.769-3.788 1.077 1.077 0 0 1 .15.017l.095.012a1 1 0 0 0 .962-.444 3.364 3.364 0 0 1 5.642 0 1 1 0 0 0 .962.444l.095-.012a1.08 1.08 0 0 1 .15-.017 1.972 1.972 0 1 1 0 3.944zM2.482 5.315A3.53 3.53 0 0 1 3.5 5.027a1.831 1.831 0 0 1 1.81-1.603 1.81 1.81 0 0 1 .553.095 4.933 4.933 0 0 1 1.281-.405A2.82 2.82 0 0 0 2.476 5.26c0 .02.006.037.006.056z"/>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                          <img src="`/some/path/400.svg`" alt="QWeather" width="32" height="32" class="">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </svg>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="src/assets/icons/400.svg" alt="QWeather" width="32" height="32">&ndash;&gt;-->
+
+<!--                        <svg-icon :iconClass="weather.icon"/>-->
+<!--                      </div></el-col>-->
+<!--                      <el-col :span="24"><div class="index-weather-end">{{ weather.text }} 空气 {{ air.category }}{{ air.aqi }}</div></el-col>-->
+<!--                      <el-col :span="24"><div class="grid-content bg-purple-dark">{{ region }}</div></el-col>-->
+<!--                    </el-row>-->
+
+<!--                    <el-container class="index-weather">-->
+<!--                      <el-aside width="5wx" class="index-weather-temp">19℃</el-aside>-->
+<!--                      <el-container>-->
+<!--                        <el-header >Header</el-header>-->
+<!--                        <el-main>Main</el-main>-->
+<!--                      </el-container>-->
+<!--                    </el-container>-->
+                  </el-aside>
+                  <el-main style="background-color: #42b983">Main</el-main>
+                </el-container>
+                <el-footer style="height: 5vh; background-color: yellowgreen">Footer</el-footer>
+              </el-container>
+              <el-container>
+                <el-main style="height: 40vh; background-color: #42b983">Main</el-main>
+<!--                <el-footer style="height: 3vh; background-color: #2c3e50">Footer</el-footer>-->
+              </el-container>
+            </el-main>
+            <el-footer height="5vh" style="background-color: aquamarine">Footer</el-footer>
+          </el-container>
+        </div>
+      </el-col>
+      <el-col :span="6"><div class="grid-content bg-purple">cc</div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple">cc</div></el-col>
+    </el-row>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+<script>
+// import { weather } from "https://api.caiyunapp.com/v2.6/api/base/login"
+// import { weather } from "https://api.caiyunapp.com/v2.5/bU78pkqSYxNpNxi2/121.6544,25.1552/realtime.json"
+import axios from "axios";
+import Vue from "vue";
+import Weather from "@/views/Weather";
+Vue.prototype.$axios = axios
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  name: 'Home',
+  components: {Weather},
+  data(){
+    return{
+      location:{},
+      local:'',
+      b:'',
+      region:'',
+      weather:{},
+      air:{},
+      temp:'', //温度
+      // Wind:'', //风速
+      // offsetof:'', //风向
+      // humidity:'',//湿度
+      // pair:'',//气压
+    }
+  },
+  watch: {
+
+  },
+  mounted(){
+
+  },
+  // props: ["local"],
+  created(){
+
+  },
+  methods: {
+
   }
-}
+};
 </script>
+
+<style>
+
+</style>
